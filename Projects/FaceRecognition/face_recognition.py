@@ -17,7 +17,7 @@ def detect(gray, frame):
     return frame
 
 
-cap = cv2.VideoCapture('/home/cuong/Downloads/Module_1_Face_Recognition/test.mp4')
+cap = cv2.VideoCapture('./test.mp4')
 frame_width = int(cap.get(3))
 frame_height = int(cap.get(4))
 out= cv2.VideoWriter('outpy.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 10, (frame_width,frame_height))
